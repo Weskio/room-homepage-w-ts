@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.flex-large{
+    display: flex;
+}
+
 .hero{
-    height: 65vh;
-    width: 100vw;
-    background-image: url(../images/mobile-image-hero-1.jpg);
+    height: 70vh;
+    width: 60%;
+    background-image: url(../images/desktop-image-hero-1.jpg);
     background-size: cover;
     position: relative;
 }
@@ -25,4 +38,75 @@
 }
 .btn:hover{
     background-color: hsl(0, 0%, 27%);
+}
+.item-desc{
+    padding: 4.5%;
+    width: 40%;
+}
+.shop-now-btn{
+    margin-top: 45px;
+    display: flex;
+    gap: 14px;
+}
+.shop-now-btn:hover, button{
+    cursor: pointer;
+    opacity: 40%;
+}
+
+.shop-btn{
+    background: transparent;
+    padding: 0;
+    width: 150%;
+}
+button{
+    padding: 0;
+    border:0;
+    background: transparent;
+}
+#shop{
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    font-weight: 600;
+}
+#item-desc-title{
+    font-size: 53px;
+    margin-bottom: 25px;
+    line-height: 45px;
+    font-weight: 700;
+}
+#desc{
+    color: hsl(0, 0%, 63%);
+    line-height: 28px;
+    font-size: 18px;
+}
+#item-desc-title2{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+@media only screen and (max-width: 725px){
+    .flex-large{
+        display: block;
+    }
+    .item-desc{
+        width: 100%;
+        padding: 10%;
+    }
+    .hero{
+        background-image: url(../images/mobile-image-hero-1.jpg);
+        width: 100%;
+    }
+    .mobile2{
+        background-image: url(../../assets/images/mobile-image-hero-2.jpg);
+    }
+    .mobile3{
+        background-image: url(../../assets/images/mobile-image-hero-3.jpg);
+    }
 }
