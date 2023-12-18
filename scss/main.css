@@ -34,6 +34,19 @@
   list-style: none;
   gap: 18%;
   color: white;
+  font-size: 110%;
+  cursor: pointer;
+}
+
+.list-item .hover-underline {
+  display: none;
+}
+
+.list-item:hover .hover-underline {
+  display: block;
+  letter-spacing: -2px;
+  margin-left: 25%;
+  margin-top: -9px;
 }
 
 .logo {
