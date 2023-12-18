@@ -3,4 +3,31 @@
   width: 100vw;
   background-image: url(../images/mobile-image-hero-1.jpg);
   background-size: cover;
+  position: relative;
+}
+
+.header {
+  padding: 9% 6%;
+  display: flex;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  display: flex;
+}
+
+.btn {
+  padding: 30px;
+  background-color: black;
+}
+
+.btn:hover {
+  background-color: hsl(0, 0%, 27%);
 }/*# sourceMappingURL=main.css.map */
