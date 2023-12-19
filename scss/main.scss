@@ -19,13 +19,33 @@
     background-position: center;
     position: relative;
 }
+
+.mobile1 {
+    background-image: url(../images/desktop-image-hero-1.jpg);
+}
+
+.mobile2 {
+    background-image: url(../images/desktop-image-hero-2.jpg);
+}
+
+.mobile3 {
+    background-image: url(../images/desktop-image-hero-3.jpg);
+}
+
+
 .mobile-header{
     display: none;
 }
 .desktop-header{
     display: flex;
     gap: 11%;
-    padding: 4%;
+    padding: 6%;
+}
+.shadow{
+    display: none;
+}
+.close-btn{
+    display: none;
 }
 .nav-items{
     display: flex;
@@ -138,8 +158,7 @@ button{
         padding: 10%;
     }
     #item-desc-title2{
-        letter-spacing: 0.35rem;
-       
+        letter-spacing: 0.35rem;  
     }
     .right-section{
         display: block;
@@ -150,9 +169,29 @@ button{
     .hero{
         width: 100%;
     }
+    
+    .close-btn{
+        display: block;
+        width: 6%;
+    }
     .desktop-header{
+        background-color: white;
+        margin-top: -21.8%;
+        padding: 11%;
+        gap: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    .mob-logo{
         display: none;
     }
+    .nav-items{
+        color: black;
+        font-weight: bold;
+        margin-left: 23vw;
+    }
+    
     .mobile-header{
         padding: 9% 6%;
         display: flex;
@@ -176,7 +215,21 @@ button{
     .hero{
         background-image: url(../images/mobile-image-hero-1.jpg);
         width: 100%;
+        height: 60vh;
     }
+
+    .mobile1 {
+        background-image: url(../images/mobile-image-hero-1.jpg);
+    }
+    
+    .mobile2 {
+        background-image: url(../images/mobile-image-hero-2.jpg);
+    }
+    
+    .mobile3 {
+        background-image: url(../images/mobile-image-hero-3.jpg);
+    }
+
 }
 
 @media only screen and (max-width: 1110px) {

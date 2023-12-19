@@ -1,50 +1,49 @@
-var MySlider = /** @class */ (function () {
-    function MySlider() {
+"use strict";
+class MySlider {
+    constructor() {
         this.currentIndex = 0;
         this.slides = [
             {
                 mobileBackground: 'mobile1',
-                title: 'Is it working',
-                description: "Yes I am working"
+                title: 'Discover innovative ways to decorate',
+                description: "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love"
             },
             {
                 mobileBackground: 'mobile2',
-                title: 'I see you are working',
-                description: "Yes I am working"
+                title: 'We are available all across the globe',
+                description: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."
             },
             {
                 mobileBackground: 'mobile3',
-                title: 'Keep it up',
-                description: "Yes I am working"
+                title: 'Manufactured with the best materials',
+                description: "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
             },
         ];
         this.initEventListeners();
     }
-    MySlider.prototype.initEventListeners = function () {
-        var _this = this;
-        var leftButton = document.querySelector('.button .btn:first-child');
-        var rightButton = document.querySelector('.button .btn:last-child');
-        leftButton === null || leftButton === void 0 ? void 0 : leftButton.addEventListener('click', function () { return _this.previousSlide(); });
-        rightButton === null || rightButton === void 0 ? void 0 : rightButton.addEventListener('click', function () { return _this.nextSlide(); });
-    };
-    MySlider.prototype.updateSlide = function () {
-        var titleElement = document.getElementById('item-desc-title');
-        var descriptionElement = document.getElementById('desc');
-        var backgroundElement = document.querySelector('.hero');
+    initEventListeners() {
+        const leftButton = document.querySelector('.button .btn:first-child');
+        const rightButton = document.querySelector('.button .btn:last-child');
+        leftButton === null || leftButton === void 0 ? void 0 : leftButton.addEventListener('click', () => this.previousSlide());
+        rightButton === null || rightButton === void 0 ? void 0 : rightButton.addEventListener('click', () => this.nextSlide());
+    }
+    updateSlide() {
+        const titleElement = document.getElementById('item-desc-title');
+        const descriptionElement = document.getElementById('desc');
+        const backgroundElement = document.querySelector('.hero');
         if (titleElement && descriptionElement && backgroundElement) {
             titleElement.textContent = this.slides[this.currentIndex].title;
             descriptionElement.textContent = this.slides[this.currentIndex].description;
-            backgroundElement.className = "".concat(this.slides[this.currentIndex].mobileBackground, " hero lg:w-[60vw] w-full lg:h-[70vh] h-[70vh] bg-cover bg-center relative");
+            backgroundElement.className = `${this.slides[this.currentIndex].mobileBackground} hero lg:w-[60vw] w-full lg:h-[70vh] h-[70vh] bg-cover bg-center relative`;
         }
-    };
-    MySlider.prototype.nextSlide = function () {
+    }
+    nextSlide() {
         this.currentIndex = (this.currentIndex + 1) % this.slides.length;
         this.updateSlide();
-    };
-    MySlider.prototype.previousSlide = function () {
+    }
+    previousSlide() {
         this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
         this.updateSlide();
-    };
-    return MySlider;
-}());
-var mySlider = new MySlider();
+    }
+}
+const mySlider = new MySlider();
