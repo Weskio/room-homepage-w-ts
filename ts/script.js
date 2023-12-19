@@ -1,4 +1,22 @@
 "use strict";
+class MenuToggle {
+    constructor() {
+        this.initEventListeners();
+    }
+    initEventListeners() {
+        const toggleButtons = document.querySelectorAll('.toggle');
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => this.toggleMenu());
+        });
+    }
+    toggleMenu() {
+        const menu = document.querySelector('.desktop-header');
+        const shadow = document.querySelector('.shadow');
+        menu === null || menu === void 0 ? void 0 : menu.classList.toggle('active');
+        shadow === null || shadow === void 0 ? void 0 : shadow.classList.toggle('active');
+    }
+}
+const menuToggle = new MenuToggle();
 class MySlider {
     constructor() {
         this.currentIndex = 0;
@@ -34,7 +52,7 @@ class MySlider {
         if (titleElement && descriptionElement && backgroundElement) {
             titleElement.textContent = this.slides[this.currentIndex].title;
             descriptionElement.textContent = this.slides[this.currentIndex].description;
-            backgroundElement.className = `${this.slides[this.currentIndex].mobileBackground} hero lg:w-[60vw] w-full lg:h-[70vh] h-[70vh] bg-cover bg-center relative`;
+            backgroundElement.className = `${this.slides[this.currentIndex].mobileBackground}`;
         }
     }
     nextSlide() {

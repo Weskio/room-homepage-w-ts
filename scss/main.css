@@ -145,7 +145,7 @@ button {
 #desc {
   color: hsl(0, 0%, 63%);
   line-height: 3vh;
-  font-size: 93%;
+  font-size: 130%;
 }
 
 #item-desc-title2 {
@@ -190,6 +190,9 @@ button {
     bottom: 0px;
     right: 0;
     display: flex;
+  }
+  #desc {
+    font-size: 103%;
   }
 }
 @media only screen and (max-width: 725px) {
