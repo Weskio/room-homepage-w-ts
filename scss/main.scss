@@ -18,6 +18,19 @@
   background-position: center;
   position: relative;
 }
+
+.mobile1 {
+  background-image: url(../images/desktop-image-hero-1.jpg);
+}
+
+.mobile2 {
+  background-image: url(../images/desktop-image-hero-2.jpg);
+}
+
+.mobile3 {
+  background-image: url(../images/desktop-image-hero-3.jpg);
+}
+
 .mobile-header {
   display: none;
 }
@@ -179,7 +192,7 @@ button {
   }
 
   .mobile3 {
-    background-image: url(../images/mobile-image-hero-3.jpg);
+    background-image: url(../images/desktop-image-hero-3.jpg);
   }
 }
 
