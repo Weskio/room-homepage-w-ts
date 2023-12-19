@@ -142,10 +142,10 @@ button {
   font-weight: 700;
 }
 
-#desc {
+#desc, #desc2 {
   color: hsl(0, 0%, 63%);
   line-height: 3vh;
-  font-size: 130%;
+  font-size: 110%;
 }
 
 #item-desc-title2 {
