@@ -1,3 +1,27 @@
+class MenuToggle {
+    constructor() {
+        this.initEventListeners();
+    }
+
+    private initEventListeners(): void {
+        const toggleButtons = document.querySelectorAll('.toggle');
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => this.toggleMenu());
+        });
+    }
+
+    private toggleMenu(): void {
+        const menu = document.querySelector('.desktop-header');
+        const shadow = document.querySelector('.shadow');
+
+        menu?.classList.toggle('active');
+        shadow?.classList.toggle('active');
+    }
+}
+
+const menuToggle = new MenuToggle();
+
+
 class MySlider {
     private currentIndex: number = 0;
     private slides: { mobileBackground: string; title: string; description: string; }[] = [

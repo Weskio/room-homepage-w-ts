@@ -166,6 +166,16 @@ button{
     .hero{
         width: 100%;
     }
+    /* Initially hide the menu and the shadow */
+.desktop-header, .shadow {
+    display: none;
+}
+
+/* When active, display them */
+.desktop-header.active, .shadow.active {
+    display: flex;
+}
+
     
     .close-btn{
         display: block;
@@ -174,8 +184,8 @@ button{
     .desktop-header{
         background-color: white;
         margin-top: -21.8%;
-        padding: 11%;
-        gap: 0;
+        padding: 7.6%;
+        gap: 23vw;
         position: fixed;
         width: 100%;
         z-index: 30;
@@ -195,7 +205,6 @@ button{
     .nav-items{
         color: black;
         font-weight: bold;
-        margin-left: 23vw;
     }
     
     .mobile-header{
