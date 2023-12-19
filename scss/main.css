@@ -129,7 +129,7 @@ button {
 #desc {
   color: hsl(0, 0%, 63%);
   line-height: 3vh;
-  font-size: 110%;
+  font-size: 93%;
 }
 
 #item-desc-title2 {
@@ -146,6 +146,9 @@ button {
   .item-desc {
     width: 100%;
     padding: 10%;
+  }
+  #item-desc-title2 {
+    letter-spacing: 0.35rem;
   }
   .right-section {
     display: block;
