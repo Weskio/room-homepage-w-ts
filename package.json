@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "build": "tsc",
     "start": "index.html"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "typescript": "^5.3.3"
   }
 }
