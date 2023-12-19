@@ -131,44 +131,6 @@ button {
   line-height: 3vh;
   font-size: 130%;
 }
-.mobile-navbar {
-  position: relative;
-}
-.mobile-list {
-  position: absolute;
-  background-color: $White;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 12vh;
-  z-index: 100;
-}
-.mobile-nav-list {
-  width: 70%;
-  display: flex;
-  justify-content: space-around;
-}
-.mobile-nav-list li {
-  padding: 10px;
-  font-size: 20px;
-  font-family: $header-font-family;
-  font-weight: 700;
-  color: $Black;
-  cursor: pointer;
-}
-.overlay {
-  width: 100%;
-  height: auto;
-  background: #000;
-  opacity: 0.8;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 99;
-}
 #item-desc-title2 {
   text-transform: uppercase;
   font-weight: 700;
