@@ -1,22 +1,43 @@
 "use strict";
+<<<<<<< HEAD
+=======
+class MenuToggle {
+    constructor() {
+        this.initEventListeners();
+    }
+    initEventListeners() {
+        const toggleButtons = document.querySelectorAll('.toggle');
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => this.toggleMenu());
+        });
+    }
+    toggleMenu() {
+        const menu = document.querySelector('.desktop-header');
+        const shadow = document.querySelector('.shadow');
+        menu === null || menu === void 0 ? void 0 : menu.classList.toggle('active');
+        shadow === null || shadow === void 0 ? void 0 : shadow.classList.toggle('active');
+    }
+}
+const menuToggle = new MenuToggle();
+>>>>>>> 96ee547cfc8b30cc69252c605cb3619470678d32
 class MySlider {
     constructor() {
         this.currentIndex = 0;
         this.slides = [
             {
                 mobileBackground: 'mobile1',
-                title: 'Is it working',
-                description: "Yes I am working"
+                title: 'Discover innovative ways to decorate',
+                description: "We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love"
             },
             {
                 mobileBackground: 'mobile2',
-                title: 'I see you are working',
-                description: "Yes I am working"
+                title: 'We are available all across the globe',
+                description: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."
             },
             {
                 mobileBackground: 'mobile3',
-                title: 'Keep it up',
-                description: "Yes I am working"
+                title: 'Manufactured with the best materials',
+                description: "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
             },
         ];
         this.initEventListeners();
@@ -34,7 +55,11 @@ class MySlider {
         if (titleElement && descriptionElement && backgroundElement) {
             titleElement.textContent = this.slides[this.currentIndex].title;
             descriptionElement.textContent = this.slides[this.currentIndex].description;
+<<<<<<< HEAD
             backgroundElement.className = `${this.slides[this.currentIndex].mobileBackground} hero lg:w-[60vw] w-full lg:h-[70vh] h-[70vh] bg-cover bg-center relative`;
+=======
+            backgroundElement.className = `${this.slides[this.currentIndex].mobileBackground}`;
+>>>>>>> 96ee547cfc8b30cc69252c605cb3619470678d32
         }
     }
     nextSlide() {

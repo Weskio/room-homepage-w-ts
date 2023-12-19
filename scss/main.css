@@ -19,18 +19,6 @@
   position: relative;
 }
 
-.mobile1 {
-  background-image: url(../images/desktop-image-hero-1.jpg);
-}
-
-.mobile2 {
-  background-image: url(../images/desktop-image-hero-2.jpg);
-}
-
-.mobile3 {
-  background-image: url(../images/desktop-image-hero-3.jpg);
-}
-
 .mobile-header {
   display: none;
 }
@@ -174,6 +162,12 @@ button {
   }
   .right-img {
     width: 100%;
+  }
+  .hero {
+    width: 100%;
+  }
+  .desktop-header {
+    display: none;
   }
   .mobile-header {
     padding: 9% 6%;
