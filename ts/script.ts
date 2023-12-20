@@ -1,3 +1,38 @@
+class MobileMenu {
+    private menu: HTMLElement | null;
+    private shadow: HTMLElement | null;
+    
+    constructor() {
+        this.menu = document.querySelector('.mobile-menu');
+        this.shadow = document.querySelector('.shadow');
+        this.initEventListeners();
+    }
+
+    private initEventListeners(): void {
+        // Event listener for opening the menu
+        const openButton = document.querySelector('.toggle[alt="mobile menu"]');
+        openButton?.addEventListener('click', () => this.toggleMenu(true));
+
+        // Event listener for closing the menu
+        const closeButton = this.menu?.querySelector('.toggle');
+        closeButton?.addEventListener('click', () => this.toggleMenu(false));
+    }
+
+    private toggleMenu(isOpen: boolean): void {
+        if (this.menu && this.shadow) {
+            if (isOpen) {
+                this.menu.style.display = 'flex';
+                this.shadow.style.display = 'block';
+            } else {
+                this.menu.style.display = 'none';
+                this.shadow.style.display = 'none';
+            }
+        }
+    }
+}
+
+const mobileMenu = new MobileMenu();
+
 class MySlider {
     private currentIndex: number = 0;
     private slides: { mobileBackground: string; title: string; description: string; }[] = [

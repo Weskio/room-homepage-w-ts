@@ -1,4 +1,33 @@
 "use strict";
+class MobileMenu {
+    constructor() {
+        this.menu = document.querySelector('.mobile-menu');
+        this.shadow = document.querySelector('.shadow');
+        this.initEventListeners();
+    }
+    initEventListeners() {
+        var _a;
+        // Event listener for opening the menu
+        const openButton = document.querySelector('.toggle[alt="mobile menu"]');
+        openButton === null || openButton === void 0 ? void 0 : openButton.addEventListener('click', () => this.toggleMenu(true));
+        // Event listener for closing the menu
+        const closeButton = (_a = this.menu) === null || _a === void 0 ? void 0 : _a.querySelector('.toggle');
+        closeButton === null || closeButton === void 0 ? void 0 : closeButton.addEventListener('click', () => this.toggleMenu(false));
+    }
+    toggleMenu(isOpen) {
+        if (this.menu && this.shadow) {
+            if (isOpen) {
+                this.menu.style.display = 'flex';
+                this.shadow.style.display = 'block';
+            }
+            else {
+                this.menu.style.display = 'none';
+                this.shadow.style.display = 'none';
+            }
+        }
+    }
+}
+const mobileMenu = new MobileMenu();
 class MySlider {
     constructor() {
         this.currentIndex = 0;

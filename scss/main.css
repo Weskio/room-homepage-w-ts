@@ -174,7 +174,7 @@ button {
   .mobile-menu {
     display: flex;
     gap: 23vw;
-    padding: 8.6%;
+    padding: 9% 6%;
     background-color: white;
     margin-top: -22%;
     position: fixed;
@@ -187,6 +187,10 @@ button {
     background-color: black;
     opacity: 60%;
     z-index: 40;
+  }
+  .mobile-menu, .shadow {
+    display: none;
+    /* other styling */
   }
   .desktop-header {
     display: none;
