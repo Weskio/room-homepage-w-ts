@@ -6,12 +6,12 @@ class MySlider {
             {
                 mobileBackground: 'mobile1',
                 title: 'Discover innovative ways to decorate',
-                description: 'We provide unmatched quality, comfort, and style for property owners across the country...'
+                description: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."
             },
             {
                 mobileBackground: 'mobile2',
                 title: 'We are available all across the globe',
-                description: 'With stores all over the world, it\'s easy for you to find furniture for your home...'
+                description: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."
             },
             {
                 mobileBackground: 'mobile3',
