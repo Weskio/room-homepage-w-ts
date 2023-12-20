@@ -74,14 +74,11 @@
   display: flex;
 }
 .mobile-menu{
-  display: flex;
-  gap: 23vw;
-  padding: 12%;
-  background-color: white;
-  margin-top: -22%;
-  position:fixed;
-  width: 100%;
-  z-index: 10;
+  display: none;
+ 
+}
+.shadow{
+  display: none;
 }
 
 .btn {
@@ -156,6 +153,23 @@ button {
   .item-desc {
     width: 100%;
     padding: 10%;
+  }
+  .mobile-menu{
+    display: flex;
+    gap: 23vw;
+    padding: 8.6%;
+    background-color: white;
+    margin-top: -22%;
+    position:fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  .shadow{
+    display: block;
+    height: 100vh;
+    background-color: black;
+    opacity: 60%;
+    z-index: 40;
   }
   .desktop-header {
     display: none;
