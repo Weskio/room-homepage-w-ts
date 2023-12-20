@@ -73,6 +73,17 @@
   right: -9.6vw;
   display: flex;
 }
+.mobile-menu{
+  display: flex;
+  gap: 23vw;
+  padding: 12%;
+  background-color: white;
+  margin-top: -22%;
+  position:fixed;
+  width: 100%;
+  z-index: 10;
+}
+
 .btn {
   padding: 30px;
   background-color: black;
