@@ -74,7 +74,7 @@
 .button {
   position: absolute;
   bottom: 0px;
-  right: -9.6vw;
+  right: -1.8vw;
   display: flex;
 }
 .mobile-menu{
@@ -86,7 +86,7 @@
 }
 
 .btn {
-  padding: 30px;
+  padding: 100% 106%;
   background-color: black;
 }
 .btn:hover {
@@ -255,5 +255,15 @@ button {
     bottom: 0px;
     right: 0;
     display: flex;
+  }
+}
+
+
+@media only screen and (min-width:1570px) {
+  .button {
+    right: -1.4vw;
+  }
+  .btn {
+    padding: 100% 140%;
   }
 }
