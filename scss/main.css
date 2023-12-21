@@ -90,7 +90,7 @@
 }
 
 .btn {
-  padding: 100% 106%;
+  padding: 100% 94%;
   background-color: black;
 }
 
@@ -163,6 +163,10 @@ button {
   font-size: 103%;
 }
 
+.desc2 {
+  width: 37vw;
+}
+
 #item-desc-title2 {
   text-transform: uppercase;
   font-weight: 700;
@@ -174,15 +178,19 @@ button {
   .flex-large {
     display: block;
   }
+  .hero {
+    width: 100%;
+  }
   .item-desc {
     width: 100%;
-    padding: 16% 10%;
+    padding: 10%;
+    margin-top: 0;
+    margin-bottom: 6%;
   }
   .desc2 {
     padding: 12% 10%;
-  }
-  .btn {
-    padding: 30px 34px;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .mobile-menu {
     display: flex;
@@ -225,9 +233,6 @@ button {
   .right-img {
     width: 100%;
   }
-  .hero {
-    width: 100%;
-  }
   .desktop-header {
     display: none;
   }
@@ -235,11 +240,8 @@ button {
     padding: 9% 6%;
     display: flex;
   }
-  .button {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    display: flex;
+  .btn {
+    padding: 30px 34px;
   }
   #desc {
     font-size: 103%;
@@ -261,12 +263,32 @@ button {
     background-image: url(../images/desktop-image-hero-3.jpg);
   }
 }
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1250px) {
+  .hero {
+    background-position: left;
+  }
   .button {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    display: flex;
+    bottom: 0;
+    right: 0vw;
+  }
+  .btn {
+    padding: 30px 34px;
+  }
+  .right-section {
+    display: block;
+    margin-top: 0;
+  }
+  .right-img {
+    width: 100%;
+    height: 140%;
+  }
+  .desc2 {
+    width: 100%;
+    padding: 7%;
+  }
+  .item-desc {
+    padding: 30px 25px;
+    margin-top: 9%;
   }
 }
 @media only screen and (min-width: 1570px) {
@@ -274,6 +296,9 @@ button {
     right: -1.4vw;
   }
   .btn {
-    padding: 100% 140%;
+    padding: 100% 122%;
+  }
+  .item-desc {
+    font-size: large;
   }
 }/*# sourceMappingURL=main.css.map */
