@@ -3,7 +3,7 @@
 
   &#xa0;
 
-  <a href="https://roomhomepagewts.netlify.app">Demo</a>
+  <a href="https://room-homepage-w-ts-qrvk.vercel.app/">Demo</a>
 </div>
 
 <h1 align="center">Room Homepage w Ts</h1>
@@ -29,9 +29,9 @@ The project demonstrates a practical application of advanced web development tec
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Responsiveness;\
+:heavy_check_mark: Slide Functionality;\
+:heavy_check_mark: Toggle Functionality;
 
 ## :rocket: Technologies ##
 
