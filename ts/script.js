@@ -56,6 +56,17 @@ class MySlider {
         const rightButton = document.querySelector('.button .btn:last-child');
         leftButton === null || leftButton === void 0 ? void 0 : leftButton.addEventListener('click', () => this.previousSlide());
         rightButton === null || rightButton === void 0 ? void 0 : rightButton.addEventListener('click', () => this.nextSlide());
+        document.addEventListener('keydown', (event) => this.handleKeyboardInput(event));
+    }
+    handleKeyboardInput(event) {
+        switch (event.key) {
+            case 'ArrowRight': // Right arrow key
+                this.nextSlide();
+                break;
+            case 'ArrowLeft': // Left arrow key
+                this.previousSlide();
+                break;
+        }
     }
     updateSlide() {
         const titleElement = document.getElementById('item-desc-title');

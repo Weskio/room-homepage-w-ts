@@ -32,6 +32,7 @@ The project demonstrates a practical application of advanced web development tec
 :heavy_check_mark: Responsiveness;\
 :heavy_check_mark: Slide Functionality;\
 :heavy_check_mark: Toggle Functionality;
+:heavy_check_mark: Navigation with Keyboard Functionality;
 
 ## :rocket: Technologies ##
 

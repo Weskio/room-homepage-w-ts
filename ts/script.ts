@@ -65,6 +65,20 @@ class MySlider {
 
         leftButton?.addEventListener('click', () => this.previousSlide());
         rightButton?.addEventListener('click', () => this.nextSlide());
+
+        document.addEventListener('keydown', (event) => this.handleKeyboardInput(event));
+  
+    }
+
+    private handleKeyboardInput(event: KeyboardEvent): void {
+        switch(event.key) {
+            case 'ArrowRight': // Right arrow key
+                this.nextSlide();
+                break;
+            case 'ArrowLeft': // Left arrow key
+                this.previousSlide();
+                break;
+        }
     }
 
     private updateSlide(): void {
