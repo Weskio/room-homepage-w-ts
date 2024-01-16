@@ -71,8 +71,10 @@ class MySlider {
     }
 
     private handleKeyboardInput(event: KeyboardEvent): void {
+        console.log('called')
         switch(event.key) {
             case 'ArrowRight': // Right arrow key
+            console.log(event)
                 this.nextSlide();
                 break;
             case 'ArrowLeft': // Left arrow key
@@ -105,3 +107,4 @@ class MySlider {
 }
 
 const mySlider = new MySlider();
+ 
