@@ -139,12 +139,22 @@ button {
   margin-bottom: 4.5%;
   line-height: 2.8rem;
   font-weight: 700;
+  width: 450px;
 }
 #desc, #desc2 {
   color: hsl(0, 0%, 63%);
   line-height: 3vh;
   font-size: 103%;
 }
+#desc{
+  width: 430px;
+}
+#desc2{
+  width: 520px;
+  height: 110px;
+  padding-right: 3%;
+}
+
 .desc2{
   width: 37vw;
 }
@@ -172,6 +182,16 @@ button {
     padding: 12% 10%;
     margin-top: 5%;
    margin-bottom: 5%;
+  }
+  #desc2{
+    width: 400px;
+    height: 140px;
+    padding-right: 3%;
+    margin-bottom: 15%;
+  }
+
+  #desc{
+    width: 400px;
   }
   
   .mobile-menu{
@@ -292,5 +312,14 @@ button {
   }
   .item-desc{
     font-size: large;
+  }
+  #item-desc-title{
+    width: 500px;
+  }
+  #desc{
+    width: 500px;
+  }
+  #desc2{
+    width:620px
   }
 }
